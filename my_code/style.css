@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --pink: #ffa3fa;
+  --darker-pink: #ff76f8;
+  --black: black;
+  --h1-fsize: 2rem;
+  --h2-fsize: 1.5rem;
+  --p-fsize: 1rem;
+}
+
+/* -------FONTS---------- */
+
+main,
+.zalando-sans-semiexpanded {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zalando-sans-semiexpanded-bold {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.section1__p--fsize {
+  font-size: var(--h2-fsize);
+}
+
+.font--italic {
+  font-style: italic;
+}
+
+p {
+  font-size: var(--p-fsize);
+}
+
+header p {
+  font-size: var(--h1-fsize);
+}
+
+article p{
+    font-size: var(--h1-fsize);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* ----------Header----------- */
