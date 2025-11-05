@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
-  --pink: #ffa3fa;
+  --pink: #faaef6;
   --darker-pink: #ff76f8;
   --black: black;
   --h1-fsize: 2rem;
   --h2-fsize: 1.5rem;
   --p-fsize: 1rem;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
 }
 
 /* -------FONTS---------- */
@@ -42,13 +46,75 @@ header p {
   font-size: var(--h1-fsize);
 }
 
-article p{
-    font-size: var(--h1-fsize);
+article p:nth-last-child(1) {
+  font-size: var(--h1-fsize);
 }
 
 a {
   text-decoration: none;
   color: var(--black);
 }
+/* ---------MAIN_GRID----------- */
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "section section figure section2 section2 section2"
+    "section3 section3 article article footer footer";
+  /* background-color: rgb(216, 0, 0); */
+  padding: 20px;
+  gap: 10px;
+}
 
-/* ----------Header----------- */
+/* ------Grid-Items--------- */
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: section;
+}
+.item3 {
+  grid-area: figure;
+}
+.item4 {
+  grid-area: section2;
+}
+.item5 {
+  grid-area: section3;
+}
+.item6 {
+  grid-area: article;
+}
+.item7 {
+  grid-area: footer;
+}
+
+/* -------------GRID--BG----------- */
+
+.item1,
+.item2,
+.item4,
+.item5,
+.item6,
+.item7 {
+  background-color: var(--pink);
+  border-radius: 10px;
+}
+
+/* ----------Header-NAV-ITEM1----------- */
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p{
+ padding-left: 1vw;
+}
+nav a{
+   padding-right:1vw;
+}
+
+/* -----------SECTION-ITEM2------------- */
+
